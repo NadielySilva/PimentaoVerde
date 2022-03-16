@@ -64,9 +64,19 @@ const Title3 = styled.h3`
 `;
 
 const Sell = styled.div`
+    font-family: 'Fredoka', sans-serif;    
     width: 100vw;
     height: 70vh;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
     background-color: aquamarine;
+`;
+
+const SellImg = styled.img`
+    width: 10vw;
+    height: auto; 
 `;
 
 const Highlights = styled.div`
@@ -114,7 +124,12 @@ export default class Main extends Component{
                        </Step>
                    </StepByStep>
                </HowItWorks>
-               <Sell></Sell>
+               <Sell>
+                   <SellImg src={myCow}/>
+                   <SellImg src={myCow}/>
+                   <Title2>Lorem ipsum at iaculis donec et, molestie mattis magna primis</Title2>
+                   <p>Id nisi metus nam non rhoncus nam luctus faucibus, magna neque diam himenaeos nisi nam convallis ligula, duis interdum sociosqu nunc augue eu tincidunt. pretium nullam massa nunc quam habitasse ad gravida erat, enim taciti euismod habitant lectus metus inceptos curae, dui tellus duis habitasse sollicitudin augue odio. </p>
+               </Sell>
                <Highlights></Highlights>
                <Testimony></Testimony>
                <Team></Team>
