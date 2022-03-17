@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   sodipodi:docname="circlePlusLightGreen.svg"
+   id="svg8"
+   version="1.1"
+   width="24"
+   viewBox="0 0 24 24"
+   stroke-width="2"
+   stroke-linejoin="round"
+   stroke-linecap="round"
+   stroke="currentColor"
+   height="24"
+   fill="none">
+  <metadata
+     id="metadata14">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs12" />
+  <sodipodi:namedview
+     inkscape:current-layer="svg8"
+     inkscape:window-maximized="1"
+     inkscape:window-y="-12"
+     inkscape:window-x="97"
+     inkscape:cy="18.011655"
+     inkscape:cx="4.2124264"
+     inkscape:zoom="12.374369"
+     showgrid="false"
+     id="namedview10"
+     inkscape:window-height="1040"
+     inkscape:window-width="1811"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0"
+     guidetolerance="10"
+     gridtolerance="10"
+     objecttolerance="10"
+     borderopacity="1"
+     bordercolor="#666666"
+     pagecolor="#ffffff" />
+  <circle
+     style="stroke:#d7e3df;stroke-opacity:1"
+     id="circle2"
+     r="10"
+     cy="12"
+     cx="12" />
+  <line
+     style="stroke:#d7e3df;stroke-opacity:1"
+     id="line4"
+     y2="16"
+     y1="8"
+     x2="12"
+     x1="12" />
+  <line
+     style="stroke:#d7e3df;stroke-opacity:1"
+     id="line6"
+     y2="12"
+     y1="12"
+     x2="16"
+     x1="8" />
+</svg>

@@ -1,8 +1,17 @@
 import React from "react";
 import styled from "styled-components";
 
+//importing components
+import PrimaryTransparentSmallBtn from '../components/Buttons/PrimaryTransparentSmall';
+import BuyContainedSmallBtn from '../components/Buttons/BuyContainedSmall';
+
 //importing assets
 import myLogoImg from '../assets/cow.svg';
+// import myContacts from '../assets/messageDarkGreen';
+// import myUser from '../assets/userDarkGreen';
+import myCart from '../assets/CartShoppingDarkGreen.png';
+
+
 
 
 const Container = styled.div`
@@ -30,10 +39,16 @@ const ListItem = styled.li`
   font-size: 0.5em;
   font-family: 'Fredoka', sans-serif;
   text-transform: uppercase;
-
-  }
+  width: 15vw;
+  height 12vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  };
+  
   &:hover {
     background-color: #d7e3df;
+    cursor: pointer;
   }
 `;
 
@@ -44,6 +59,16 @@ const List = styled.ul`
   list-style: none;
   color: red;
   font-size: 30px;
+`;
+
+const HeaderImg = styled.img`
+  width: 5vw;
+  height: 5vh;
+`;
+
+const HeaderPngImg = styled.img`
+  width: 2vw;
+  height: 3.6vh;
 `;
 
 function Header() {
@@ -60,9 +85,9 @@ function Header() {
         <ListItem>Planos</ListItem>
         <ListItem>Sobre Nós</ListItem>
       </List>
-      <button>Contatos</button>
-      <button>Login/Criar Conta</button>
-      <button>Carrinho de Compras Aside</button>
+      <PrimaryTransparentSmallBtn><HeaderImg src={myLogoImg}/></PrimaryTransparentSmallBtn>
+      <PrimaryTransparentSmallBtn><HeaderImg src={myLogoImg}/></PrimaryTransparentSmallBtn>
+      <BuyContainedSmallBtn><HeaderPngImg src={myCart}/></BuyContainedSmallBtn>
     </Container>
   );
 }

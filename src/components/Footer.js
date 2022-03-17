@@ -3,8 +3,15 @@ import React from "react";
 //importing style
 import styled from "styled-components";
 
+//importing components
+import PrimaryTransparentSmallBtn from '../components/Buttons/PrimaryTransparentSmall';
+import PrimaryContainedSmallBtn from '../components/Buttons/PrimaryContainedSmall.js';
+
+
 //importing assets
-import myCow from '../assets/cow.svg'
+import myCow from '../assets/cow.svg';
+// import myCowOrange from '../assets/cowOrange.svg';
+// import myIntagramIcon from '../assets/IntagramLightGreen.svg';
 
 const Container = styled.div`
     font-family: 'Fredoka', sans-serif;
@@ -31,7 +38,8 @@ const SocialMedia = styled.div`
     height: 30vh;
     display: flex;
     flex-direction: row;
-    background-color: pink;
+    justify-content: space-evenly;
+    align-items: center;
 `;
 
 const AboutUs = styled.div`
@@ -40,7 +48,6 @@ const AboutUs = styled.div`
     height: 30vh;
     display: flex;
     flex-direction: column;
-    background-color: pink;
 `;
 
 const Title3 = styled.h3`
@@ -54,7 +61,6 @@ const NavSection = styled.div`
     height: 30vh;
     display: flex;
     flex-direction: column;
-    background-color: pink;
 `;
 
 const ContactUs = styled.div`
@@ -63,13 +69,11 @@ const ContactUs = styled.div`
     height: 30vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    background-color: pink;
 `;
 
 const FooterImg = styled.img`
-    width: 2.25vw;
-    height: auto;
+    width: 2vw;
+    height: 3.6vh;
 `;
 
 const Payment = styled.div`
@@ -80,7 +84,6 @@ const Payment = styled.div`
     display: flex;
     align-items: center;
     flex-direction: row;
-    background-color: pink;
 `;
 
 const Copyrights = styled.div`
@@ -92,7 +95,10 @@ const Copyrights = styled.div`
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    background-color: pink;
+`;
+
+const Link = styled.a`
+    color:inherit;
 `;
 
 function Footer (){
@@ -101,42 +107,41 @@ function Footer (){
             <SubContainer>
                 <SocialMedia>
                     <img/>
-                    <button>Instagram</button>
-                    <button>Facebook</button>
-                    <button>Pinterest</button>
-                    <button>Twitter</button>
+                    <PrimaryContainedSmallBtn><FooterImg src={myCow}/></PrimaryContainedSmallBtn>
+                    <PrimaryContainedSmallBtn><FooterImg src={myCow}/></PrimaryContainedSmallBtn>
+                    <PrimaryContainedSmallBtn><FooterImg src={myCow}/></PrimaryContainedSmallBtn>
+                    <PrimaryContainedSmallBtn><FooterImg src={myCow}/></PrimaryContainedSmallBtn>
                 </SocialMedia>
                 <AboutUs>
                     <Title3>Institucional</Title3>
-                    <a href="#">Sobre nós</a>
-                    <a href="#">Trabalhe na Pimenta Verde</a>
-                    <a href="#">Seja um parceiro</a>
-                    <a href="#">Termos de Uso</a>
-                    <a href="#">Política de Privacidade</a>
+                    <Link href="#">Sobre nós</Link>
+                    <Link href="#">Trabalhe na Pimenta Verde</Link>
+                    <Link href="#">Seja um parceiro</Link>
+                    <Link href="#">Termos de Uso</Link>
+                    <Link href="#">Política de Privacidade</Link>
                 </AboutUs>
                 <NavSection>
                     <Title3>Navegue</Title3>
-                    <a href="#">Cardápio</a>
-                    <a href="#">Planos</a>
-                    <a href="#">Como Funciona</a>
-                    <a href="#">Blog</a>                    
+                    <Link href="#">Cardápio</Link>
+                    <Link href="#">Planos</Link>
+                    <Link href="#">Como Funciona</Link>
+                    <Link href="#">Blog</Link>                    
                 </NavSection>
                 <ContactUs>
                     <Title3>Fale com a Pimenta Verde</Title3>
-                    <p><FooterImg src={myCow}/>(67) 3693-4126</p>
-                    <p><FooterImg/>(67) 2929-8216</p>
+                    <p><FooterImg src={myCow}/>(67) 3693-4126 | (67) 2929-8216</p>
                     <p><FooterImg src={myCow}/>(67) 99823-6892</p>
                     <p><FooterImg src={myCow}/>falecom@pimentaverde.com.br</p>
                     <p><FooterImg src={myCow}/>segunda a sexta, das 8h às 22h</p>
                 </ContactUs>
             </SubContainer>
-            <Payment>
+            {/* <Payment>
                 <p>Pagamento</p>
                 <img/>
                 <img/>
                 <img/>
                 <img/>
-            </Payment>
+            </Payment> */}
             <Copyrights>
                 <p>© Pimentão Verde - Todos os direitos reservados. Rua Ave do Paraíso, 792. Residencial Damha III. Campo Grande - MS | CEP: 79046-238 | CNPJ: 56.685.556/0001-13</p>
             </Copyrights>
