@@ -42,3 +42,6 @@ class App extends Component {
 }
 
 export default App;
+
+// https://codepen.io/mutedblues/pen/MmPNPG?editors=1100
+// https://codepen.io/erikterwan/pen/EVzeRP?editors=1000

@@ -17,3 +17,7 @@ const IconImg = ({child, src}) =>{
 };
 
 export default IconImg
+
+// const BtnSocial = styled.svg` 
+//     width: 30px;
+//     fill: #fff;
