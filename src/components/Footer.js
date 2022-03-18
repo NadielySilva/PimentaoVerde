@@ -71,20 +71,28 @@ const ContactUs = styled.div`
     flex-direction: column;
 `;
 
+const ContactUsParagraph = styled.p`
+    width: 36vw;
+    height: 20vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+`;
+
 const FooterImg = styled.img`
     width: 2vw;
     height: 3.6vh;
 `;
 
-const Payment = styled.div`
-    font-family: 'Fredoka', sans-serif;
-    font-weight: 400;
-    width: 100vw;
-    height: 10vh;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-`;
+// const Payment = styled.div`
+//     font-family: 'Fredoka', sans-serif;
+//     font-weight: 400;
+//     width: 100vw;
+//     height: 10vh;
+//     display: flex;
+//     align-items: center;
+//     flex-direction: row;
+// `;
 
 const Copyrights = styled.div`
     font-family: 'Fredoka', sans-serif;
@@ -129,10 +137,10 @@ function Footer (){
                 </NavSection>
                 <ContactUs>
                     <Title3>Fale com a Pimenta Verde</Title3>
-                    <p><FooterImg src={myCow}/>(67) 3693-4126 | (67) 2929-8216</p>
-                    <p><FooterImg src={myCow}/>(67) 99823-6892</p>
-                    <p><FooterImg src={myCow}/>falecom@pimentaverde.com.br</p>
-                    <p><FooterImg src={myCow}/>segunda a sexta, das 8h às 22h</p>
+                    <ContactUsParagraph><FooterImg src={myCow}/>(67) 3693-4126 | (67) 2929-8216</ContactUsParagraph>
+                    <ContactUsParagraph><FooterImg src={myCow}/>(67) 99823-6892</ContactUsParagraph>
+                    <ContactUsParagraph><FooterImg src={myCow}/>falecom@pimentaverde.com.br</ContactUsParagraph>
+                    <ContactUsParagraph><FooterImg src={myCow}/>segunda a sexta, das 8h às 22h</ContactUsParagraph>
                 </ContactUs>
             </SubContainer>
             {/* <Payment>

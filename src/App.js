@@ -3,10 +3,11 @@ import React, { Component } from "react";
 //importing components
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import Main from "./components/Main/Main"
 
 
 //importing assets
-import myCow from "./assets/cow.svg"
+
 
 //importing style
 import styled, { createGlobalStyle } from "styled-components";
@@ -26,13 +27,14 @@ const BtnImg = styled.img`
   padding: 0.125vh; 
 `;
 
+
 class App extends Component {
   render() {
     return (
       <div>
         <GlobalStyle />
         <Header/>
-             
+        <Main/>
         <Footer/>
       </div>
     );
